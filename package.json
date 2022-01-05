@@ -8,7 +8,7 @@
   "scripts": {
     "test": "tsc -p ./ && mocha -r ts-node/register",
     "appveyorTest": "tsc -p ./ && nyc mocha --reporter mocha-appveyor-reporter test/*.js",
-    "compile": "tsc -watch -p ./"
+    "compile": "tsc -p ./"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.1",
