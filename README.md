@@ -1,6 +1,6 @@
 # [python-shell](https://www.npmjs.com/package/python-shell) [![Build status](https://ci.appveyor.com/api/projects/status/m8e3h53vvxg5wb2q/branch/master?svg=true)](https://ci.appveyor.com/project/Almenon/python-shell/branch/master) [![codecov](https://codecov.io/gh/extrabacon/python-shell/branch/master/graph/badge.svg)](https://codecov.io/gh/extrabacon/python-shell)
 
-<!-- change above url according to repo -->
+<!-- change above url according to -->
 A simple way to run Python scripts from Node.js with basic but efficient inter-process communication and better error handling.
 
 ## Features
