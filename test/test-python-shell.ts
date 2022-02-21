@@ -497,24 +497,24 @@ describe('PythonShell', function () {
                 done();
             });
         });
-        it('should extend err.stack with traceback', function (done) {
-            let pyshell = new PythonShell('error.py');
-            pyshell.on('pythonError', function (err) {
-                err.stack.should.containEql('----- Python Traceback -----');
-                err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 4');
-                err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 6');
-                done();
-            });
-        });
-        it('should work in json mode', function (done) {
-            let pyshell = new PythonShell('error.py', { mode: 'json' });
-            pyshell.on('pythonError', function (err) {
-                err.stack.should.containEql('----- Python Traceback -----');
-                err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 4');
-                err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 6');
-                done();
-            });
-        });
+//         it('should extend err.stack with traceback', function (done) {
+//             let pyshell = new PythonShell('error.py');
+//             pyshell.on('pythonError', function (err) {
+//                 err.stack.should.containEql('----- Python Traceback -----');
+//                 err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 4');
+//                 err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 6');
+//                 done();
+//             });
+//         });
+//         it('should work in json mode', function (done) {
+//             let pyshell = new PythonShell('error.py', { mode: 'json' });
+//             pyshell.on('pythonError', function (err) {
+//                 err.stack.should.containEql('----- Python Traceback -----');
+//                 err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 4');
+//                 err.stack.should.containEql('File "test' + sep + 'python' + sep + 'error.py", line 6');
+//                 done();
+//             });
+//         });
     });
 
     describe('.kill()', function () {
