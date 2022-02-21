@@ -29,7 +29,7 @@ postMerge:
 preMerge:
   pattern:
     # regex pattern to discover tests to run in case of premerge
-    - - "./test/test-python-shell.ts"
+    - "./test/test-python-shell.ts"
 
 postRun:
   # set of commands to run after running the tests
