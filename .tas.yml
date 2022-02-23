@@ -41,7 +41,7 @@ postRun:
 configFile: mocharc.yml
 
 # provide the semantic version of nodejs required for your project
-# nodeVersion: 14.17.2
+nodeVersion: 12.18.3
 
 # configure whether to smartSelect test-cases. Default true
 smartRun: true
