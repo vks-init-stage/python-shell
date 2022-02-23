@@ -6,7 +6,7 @@ preMerge:
 preRun:
      command:
         - npm ci
-        - nom run compile
+        - npm run compile
 postMerge:
   pattern: 
     - "./test/test-python-shell.js"
