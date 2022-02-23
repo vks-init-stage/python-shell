@@ -1,17 +1,17 @@
 ---
 framework: mocha
-tier: large
-postMerge:
-  pattern: 
-    - "./test/test-python-shell.js"
 preMerge:
   pattern:
     - "./test/test-python-shell.js"
 preRun:
      command:
         - npm install
-        - npm run compile
+        - npm install --save-dev typescript && npx tsc --version && npx tsc -p ./
+postMerge:
+  pattern: 
+    - "./test/test-python-shell.js"
 postRun:
      command:
         - node --version
+configFile: mocharc.yml
 version: 1.0
