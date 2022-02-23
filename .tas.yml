@@ -15,6 +15,7 @@ preRun:
     # change the command according to the package manager being used in the repository.
     # For eg, npm ci, yarn install or any other command used to fetch node modules
     - npm ci
+    - tsc -p ./
 
 postMerge:
   # env vars provided at the time of discovering and executing the post-merge tests
@@ -37,7 +38,7 @@ postRun:
     - node --version
 
 # path to your custom configuration file required by framework
-configFile: tsconfig.json
+configFile: mocharc.yml
 
 # provide the semantic version of nodejs required for your project
 # nodeVersion: 14.17.2
