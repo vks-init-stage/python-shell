@@ -2,14 +2,14 @@
 framework: mocha
 preMerge:
   pattern:
-    - "./test/test-python-shell.js"
+    - "./test/*.js"
 preRun:
      command:
         - npm ci
         - npm run compile
 postMerge:
   pattern: 
-    - "./test/test-python-shell.js"
+    - "./test/*.js"
 postRun:
      command:
         - node --version
